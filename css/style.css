@@ -7,7 +7,27 @@ body {
     margin: 0;
 }
 
+/* SpinnerX X-Team */
+#spinnerX {
+    content: "";
+    box-sizing: border-box;
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    border-top: 2px solid coral;
+    border-right: 2px solid transparent;
+    animation: spinnerX 0.7s linear infinite;
+    margin: 47vh auto;
+}
+
+@keyframes spinnerX {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 #slideShowX {
+    display: none;
     max-width: 80%;
     height: 80vh;
     margin: 10vh auto;
@@ -40,6 +60,7 @@ body {
 
 #slideShowX #pre:hover {
     padding-left: 10px;
+    padding-right: 20px;
 }
 
 #slideShowX #next {
@@ -49,4 +70,5 @@ body {
 
 #slideShowX #next:hover {
     padding-right: 10px;
+    padding-left: 20px;
 }
